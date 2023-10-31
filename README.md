@@ -2,7 +2,7 @@
 
 ## Integrate Sovendus into a React Web App
 
-1. Download the <a href="https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-React/main/SovendusVoucherNetworkAndCheckoutBenefits.tsx" download target="_blank">Sovendus Component from here</a> and add the file to your React project
+1. Download the [Sovendus Component from here](https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-React/main/SovendusVoucherNetworkAndCheckoutBenefits.tsx "download") and add the file to your React project
 2. Use the component on you checkout success page and make sure to pass all the required data:
 ```
 <SovendusBanner
