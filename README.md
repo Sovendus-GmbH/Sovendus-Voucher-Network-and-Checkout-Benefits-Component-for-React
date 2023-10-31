@@ -2,7 +2,7 @@
 
 ## Integrate Sovendus into a React Web App
 
-1. Download the [Sovendus Component from here](https://github.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-React/blob/main/SovendusVoucherNetworkAndCheckoutBenefits.tsx) and add the file to your React project
+1. Download the [Sovendus Component from here](https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-React/main/SovendusVoucherNetworkAndCheckoutBenefits.tsx) and add the file to your React project
 2. Use the component on you checkout success page and make sure to pass all the required data:
 ```
 <SovendusBanner
@@ -13,7 +13,7 @@
         orderCurrency={"EUR"}
         sessionId={"Session32323"}
         usedCouponCode={"TestVoucherCode"}
-        
+
         salutation={"Mr."}
         firstName={"Test"}
         lastName={"Tester"}
