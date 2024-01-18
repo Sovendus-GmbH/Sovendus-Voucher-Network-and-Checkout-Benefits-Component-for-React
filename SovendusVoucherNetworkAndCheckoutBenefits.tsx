@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// version 1.0.0
-
 interface SovendusBannerProps {
   // sovendus data
   trafficSourceNumber: number;
@@ -67,6 +65,7 @@ export default function SovendusBanner({
           orderCurrency,
           usedCouponCode: usedCouponCode || "",
           iframeContainerId: divId,
+          integrationType: "react-1.0.1"
         },
       ];
       window.sovConsumer = {
