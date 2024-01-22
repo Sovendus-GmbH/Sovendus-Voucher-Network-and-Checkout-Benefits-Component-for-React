@@ -43,7 +43,7 @@ function SovendusBanner({ trafficSourceNumber, trafficMediumNumber, orderId, ord
                     orderCurrency,
                     usedCouponCode: usedCouponCode || "",
                     iframeContainerId: divId,
-                    integrationType: "react-1.0.3"
+                    integrationType: "react-1.0.4"
                 },
             ];
             window.sovConsumer = {
