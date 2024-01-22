@@ -1,7 +1,7 @@
 # Sovendus Voucher Network & Checkout Benefits Component for React
 
 ## Install manually
-Download the [Sovendus Component from here](https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-React/main/src/SovendusVoucherNetworkAndCheckoutBenefits.tsx "download") and add the file to your React project
+Download the [Sovendus Component from here](https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-React/main/src/index.tsx "download") and add the file to your React project
 
 ## Install through npmjs
 Execute the following command to install it through npm:

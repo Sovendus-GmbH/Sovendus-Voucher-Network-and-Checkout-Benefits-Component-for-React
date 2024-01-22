@@ -1,6 +1,6 @@
 {
   "name": "sovendus-voucher-network-and-checkout-benefits-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Official React Component for Sovendus Voucher Network and Checkout Benefits",
   "main": "dist/index.js",
   "files": [
@@ -8,8 +8,8 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/SovendusVoucherNetworkAndCheckoutBenefiits.d.ts",
-      "default": "./dist/SovendusVoucherNetworkAndCheckoutBenefiits.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "scripts": {
