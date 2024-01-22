@@ -11,7 +11,7 @@ Execute the following command to install it through npm:
 
 ## Use the component in your React App
 Use the component on you checkout success page and make sure to pass all the required data:
-```
+```tsx
 <SovendusBanner
         trafficSourceNumber={YOUR_TRAFFIC_SOURCE_NUMBER} // replace with your trafficSourceNumber
         trafficMediumNumber={YOUR_TRAFFIC_MEDIUM_NUMBER} // replace with your trafficMediumNumber
