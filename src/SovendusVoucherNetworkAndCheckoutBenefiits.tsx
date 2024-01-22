@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-interface SovendusBannerProps {
+export interface SovendusBannerProps {
   // sovendus data
   trafficSourceNumber: number;
   trafficMediumNumber: number;
@@ -45,7 +45,7 @@ export default function SovendusBanner({
   cityName,
   countryCode,
   zipCode,
-}: SovendusBannerProps): JSX.Element {
+}: SovendusBannerProps) {
   const [divId, setDivId] = useState<string>();
   React.useEffect(() => {
     window.sovDivId = 1 + (window.sovDivId || 0);
@@ -65,7 +65,7 @@ export default function SovendusBanner({
           orderCurrency,
           usedCouponCode: usedCouponCode || "",
           iframeContainerId: divId,
-          integrationType: "react-1.0.1"
+          integrationType: "react-1.0.3"
         },
       ];
       window.sovConsumer = {
@@ -91,7 +91,7 @@ export default function SovendusBanner({
     }
   }, [divId]);
 
-  return <div id={divId}></div>;
+  return (<div id={divId}></div>);
 }
 
 interface SovWindow extends Window {
