@@ -1,6 +1,6 @@
 {
   "name": "sovendus-voucher-network-and-checkout-benefits-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Official React Component for Sovendus Voucher Network and Checkout Benefits",
   "main": "dist/index.js",
   "files": [
@@ -15,9 +15,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
-    "build": "tsc",
-    "preversion": "npm run build",
-    "version": "npm publish"
+    "build": "npm run prebuild && tsc",
+    "version": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
