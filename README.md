@@ -8,10 +8,6 @@ Execute the following command to install it through npm:
 npm install --save sovendus-voucher-network-and-checkout-benefits-react
 ```
 
-## Install manually
-
-Download the [Sovendus Component from here](https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-React/main/src/index.tsx "download") and add the file to your React project
-
 ## Use the component in your React App
 
 Use the component on you checkout success / thank you page and make sure to pass all the required data:
@@ -39,7 +35,7 @@ Use the component on you checkout success / thank you page and make sure to pass
 />
 ```
 
-### Additional steps for Switzerland
+## Additional steps for Switzerland
 
 For Switzerland it is also required to add the following component on the home page / page where users will land coming from the Sovendus Voucher Network
 
