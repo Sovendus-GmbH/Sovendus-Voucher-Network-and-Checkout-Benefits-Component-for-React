@@ -12,7 +12,7 @@ npm install --save sovendus-voucher-network-and-checkout-benefits-react
 
 Use the component on you checkout success / thank you page and make sure to pass all the required data:
 
-[Information about the mandatory Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
+[Click here for detailed information on the parameters and which ones are required.](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
 
 ```tsx
 <SovendusBanner
