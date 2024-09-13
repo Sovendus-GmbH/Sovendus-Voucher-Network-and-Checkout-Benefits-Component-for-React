@@ -29,6 +29,7 @@ Use the component on you checkout success / thank you page and make sure to pass
   email={"test@sovendus.com"}
   phoneNumber={"+49123456789"}
   yearOfBirth={1991}
+  dateOfBirth={"01.12.2020"}
   streetName={"Streetname"}
   streetNumber={"12"}
   cityName={"Reisbach"}

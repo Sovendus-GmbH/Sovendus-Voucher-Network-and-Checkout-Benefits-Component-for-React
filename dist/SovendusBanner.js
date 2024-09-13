@@ -25,7 +25,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importStar(require("react"));
-function SovendusBanner({ trafficSourceNumber, trafficMediumNumber, orderId, orderValue, orderCurrency, sessionId, usedCouponCode, salutation, firstName, lastName, email, phoneNumber, yearOfBirth, streetName, streetNumber, cityName, countryCode, zipCode, }) {
+function SovendusBanner({ trafficSourceNumber, trafficMediumNumber, orderId, orderValue, orderCurrency, sessionId, usedCouponCode, salutation, firstName, lastName, email, phoneNumber, yearOfBirth, dateOfBirth, streetName, streetNumber, cityName, countryCode, zipCode, }) {
     const [divId, setDivId] = (0, react_1.useState)();
     react_1.default.useEffect(() => {
         window.sovDivId = 1 + (window.sovDivId || 0);
@@ -33,20 +33,19 @@ function SovendusBanner({ trafficSourceNumber, trafficMediumNumber, orderId, ord
     }, []);
     react_1.default.useEffect(() => {
         if (divId) {
-            window.sovIframes = [
-                {
-                    trafficSourceNumber: trafficSourceNumber,
-                    trafficMediumNumber: trafficMediumNumber,
-                    sessionId,
-                    timestamp: Math.floor(Date.now() / 1000),
-                    orderId,
-                    orderValue,
-                    orderCurrency,
-                    usedCouponCode: usedCouponCode || "",
-                    iframeContainerId: divId,
-                    integrationType: "react-1.0.5",
-                },
-            ];
+            window.sovIframes = window.sovIframes || [];
+            window.sovIframes.push({
+                trafficSourceNumber: trafficSourceNumber,
+                trafficMediumNumber: trafficMediumNumber,
+                sessionId: sessionId || "",
+                timestamp: Math.floor(Date.now() / 1000),
+                orderId: orderId || "",
+                orderValue: orderValue || "",
+                orderCurrency: orderCurrency || "",
+                usedCouponCode: usedCouponCode || "",
+                iframeContainerId: divId,
+                integrationType: "react-1.0.6",
+            });
             window.sovConsumer = {
                 consumerSalutation: salutation || "",
                 consumerFirstName: firstName || "",
@@ -56,6 +55,7 @@ function SovendusBanner({ trafficSourceNumber, trafficMediumNumber, orderId, ord
                 consumerZipcode: zipCode || "",
                 consumerPhone: phoneNumber || "",
                 consumerYearOfBirth: yearOfBirth || "",
+                consumerDateOfBirth: dateOfBirth || "",
                 consumerStreet: streetName || "",
                 consumerStreetNumber: streetNumber || "",
                 consumerCity: cityName || "",

@@ -8,11 +8,11 @@ export interface SovendusBannerProps {
   trafficMediumNumber: number;
 
   // order data
-  orderId: string;
-  orderValue: number;
-  orderCurrency: string;
-  sessionId: string;
-  usedCouponCode: string;
+  orderId?: string;
+  orderValue?: number;
+  orderCurrency?: string;
+  sessionId?: string;
+  usedCouponCode?: string;
 
   // customer data
   salutation?: "Mr." | "Mrs." | "";
@@ -23,6 +23,7 @@ export interface SovendusBannerProps {
   zipCode?: string;
   phoneNumber?: string;
   yearOfBirth?: number;
+  dateOfBirth?: string;
   streetName?: string;
   streetNumber?: string;
   cityName?: string;
@@ -42,6 +43,7 @@ export default function SovendusBanner({
   email,
   phoneNumber,
   yearOfBirth,
+  dateOfBirth,
   streetName,
   streetNumber,
   cityName,
@@ -56,20 +58,20 @@ export default function SovendusBanner({
 
   React.useEffect(() => {
     if (divId) {
-      window.sovIframes = [
-        {
-          trafficSourceNumber: trafficSourceNumber,
-          trafficMediumNumber: trafficMediumNumber,
-          sessionId,
-          timestamp: Math.floor(Date.now() / 1000),
-          orderId,
-          orderValue,
-          orderCurrency,
-          usedCouponCode: usedCouponCode || "",
-          iframeContainerId: divId,
-          integrationType: "react-1.0.5",
-        },
-      ];
+      window.sovIframes = window.sovIframes || [];
+      window.sovIframes.push({
+        trafficSourceNumber: trafficSourceNumber,
+        trafficMediumNumber: trafficMediumNumber,
+        sessionId: sessionId || "",
+        timestamp: Math.floor(Date.now() / 1000),
+        orderId: orderId || "",
+        orderValue: orderValue || "",
+        orderCurrency: orderCurrency || "",
+        usedCouponCode: usedCouponCode || "",
+        iframeContainerId: divId,
+        integrationType: "react-1.0.6",
+      });
+
       window.sovConsumer = {
         consumerSalutation: salutation || "",
         consumerFirstName: firstName || "",
@@ -79,6 +81,7 @@ export default function SovendusBanner({
         consumerZipcode: zipCode || "",
         consumerPhone: phoneNumber || "",
         consumerYearOfBirth: yearOfBirth || "",
+        consumerDateOfBirth: dateOfBirth || "",
         consumerStreet: streetName || "",
         consumerStreetNumber: streetNumber || "",
         consumerCity: cityName || "",
