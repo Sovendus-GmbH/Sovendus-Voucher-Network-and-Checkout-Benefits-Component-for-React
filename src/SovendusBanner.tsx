@@ -8,25 +8,25 @@ export interface SovendusBannerProps {
   trafficMediumNumber: number;
 
   // order data
-  orderId?: string;
-  orderValue?: number;
-  orderCurrency?: string;
-  sessionId?: string;
-  usedCouponCode?: string;
+  orderId?: string | undefined;
+  orderValue?: number | undefined;
+  orderCurrency?: string | undefined;
+  sessionId?: string | undefined;
+  usedCouponCode?: string | undefined;
 
   // customer data
-  salutation?: "Mr." | "Mrs." | "";
-  firstName?: string;
-  lastName?: string;
-  email?: string;
-  countryCode?: string;
-  zipCode?: string;
-  phoneNumber?: string;
-  yearOfBirth?: number;
-  dateOfBirth?: string;
-  streetName?: string;
-  streetNumber?: string;
-  cityName?: string;
+  salutation?: "Mr." | "Mrs." | ""| undefined;
+  firstName?: string| undefined;
+  lastName?: string| undefined;
+  email?: string| undefined;
+  countryCode?: string| undefined;
+  zipCode?: string| undefined;
+  phoneNumber?: string| undefined;
+  yearOfBirth?: number| undefined;
+  dateOfBirth?: string| undefined;
+  streetName?: string| undefined;
+  streetNumber?: string| undefined;
+  cityName?: string| undefined;
 }
 
 export default function SovendusBanner({
@@ -69,7 +69,7 @@ export default function SovendusBanner({
         orderCurrency: orderCurrency || "",
         usedCouponCode: usedCouponCode || "",
         iframeContainerId: divId,
-        integrationType: "react-1.0.7",
+        integrationType: "react-1.1.0",
       });
 
       window.sovConsumer = {

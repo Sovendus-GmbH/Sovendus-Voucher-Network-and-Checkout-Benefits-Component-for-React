@@ -1,11 +1,17 @@
 # Sovendus Voucher Network & Checkout Benefits Component for React
 
-## Install through npmjs
+## Installation
 
-Execute the following command to install it through npm:
+Install the package using your favorite package manager:
 
 ```bash
 npm install --save sovendus-voucher-network-and-checkout-benefits-react
+```
+
+or
+
+```bash
+yarn add sovendus-voucher-network-and-checkout-benefits-react
 ```
 
 ## Use the component in your React App
