@@ -1,6 +1,6 @@
 {
   "name": "sovendus-voucher-network-and-checkout-benefits-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Official React Component for Sovendus Voucher Network and Checkout Benefits",
   "main": "dist/index.js",
   "files": [
@@ -42,6 +42,6 @@
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
-    "react": "^17.0.0"
+    "react": ">=17.0.0"
   }
 }

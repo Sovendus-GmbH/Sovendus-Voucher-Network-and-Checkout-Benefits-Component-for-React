@@ -69,7 +69,7 @@ export default function SovendusBanner({
         orderCurrency: orderCurrency || "",
         usedCouponCode: usedCouponCode || "",
         iframeContainerId: divId,
-        integrationType: "react-1.1.0",
+        integrationType: "react-1.1.1",
       });
 
       window.sovConsumer = {
