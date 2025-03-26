@@ -1,15 +1,29 @@
 # Sovendus React Components
 
-This document provides guidance on using the Sovendus React components for integrating Sovendus services into your React application.
+This document provides guidance on using the Sovendus React components for integrating Sovendus marketing solutions into your React application.
 
-## Overview
+## Table of Contents
 
-The package includes two main React components:
+- [Disclaimer](#disclaimer)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Components Overview](#components-overview)
+  - [SovendusLandingPageReact](#sovenduslandingpagereact)
+  - [SovendusThankyouPageReact](#sovendusthankyoupagereact)
+- [Usage](#usage)
+  - [SovendusLandingPageReact Implementation](#sovenduslandingpagereact-implementation)
+  - [SovendusThankyouPageReact Implementation](#sovendusthankyoupagereact-implementation)
+- [Compatibility](#compatibility)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
 
-- **SovendusLandingPageReact**: For handling Sovendus services on regular pages.
-- **SovendusThankyouPageReact**: For integrating Sovendus Voucher Network and other services on order confirmation pages.
+## Disclaimer
 
-Both components are designed to work in both client-side React and Next.js applications with the "use client" directive.
+This component is released as open source under the GPL v3 license. We welcome bug reports and pull requests from the community. However, please note that the component is provided "as is" without any warranties or guarantees. It may not be compatible with all other libraries and could potentially cause issues with your store. We strongly recommend that you test the components thoroughly in a staging environment before deploying it to a live site. Furthermore, we do not promise future support or updates and reserve the right to discontinue support for the component at any time.
+
+## Introduction
+
+Sovendus offers various marketing solutions including voucher networks, checkout benefits, optimize and checkout products. These React components provide an easy way to integrate these services into your React application, whether it's a standard React app or a Next.js project.
 
 ## Disclaimer
 
@@ -23,11 +37,72 @@ npm install sovendus-integration-react sovendus-integration-types
 yarn add sovendus-integration-react sovendus-integration-types
 ```
 
-## Usage
+## Components Overview
+
+The package includes two main React components:
 
 ### SovendusLandingPageReact
 
-This component handles page tracking and Sovendus Optimize integration. It doesn't render visible content by default.
+This component is designed for handling Sovendus services on regular pages. It manages:
+
+- Cookie-based tracking for Voucher Network (optional)
+- Conversion tracking for Checkout Products
+- Integration with Sovendus Optimize
+
+> [!IMPORTANT]
+> The SovendusLandingPageReact component must be included on **all pages** of your website to ensure proper functioning of Sovendus Optimize.
+
+### SovendusThankyouPageReact
+
+This component is specifically for order confirmation pages and integrates:
+
+- Sovendus Voucher Network banners
+- Checkout Benefits product offers
+- Conversion tracking for multiple Sovendus services including Optimize
+
+Both components work with client-side React and Next.js applications (with the "use client" directive).
+
+## Usage
+
+### SovendusLandingPageReact Implementation
+
+This component should be placed on your regular site pages to enable various tracking and integration features.
+
+> [!NOTE]
+> Each functionality described below is optional and can be enabled/disabled individually.
+
+#### Sovendus Checkout Benefits
+
+Checkout Benefits does not require the SovendusLandingPageReact component.
+
+#### Sovendus Voucher Network
+
+This is only required if you opt into cookie-based tracking. You'll need to:
+
+- Enable it in the component settings
+- Notify your Sovendus Account Manager
+
+> [!IMPORTANT]
+> This tag is required for Voucher Network Switzerland and optional for other regions.
+
+#### Sovendus Checkout Products
+
+Enables conversion tracking if the `sovReqToken` was saved by the landing page component.
+
+> [!NOTE]
+> Enabling Checkout Products will set and get cookies from Sovendus. Ensure compliance with privacy regulations.
+
+#### Sovendus Optimize
+
+Handles the core Sovendus Optimize functionality which analyzes visitor behavior to optimize conversion rates by:
+
+- Reading user behavior patterns and interactions
+- Displaying targeted overlay messages to users at strategic moments
+- Providing personalized experiences to reduce bounce rates and cart abandonment
+- Implementing various trigger rules based on user actions
+
+> [!IMPORTANT]
+> For Sovendus Optimize to function properly, the SovendusLandingPageReact component must be present on ALL pages of your website. The thank you page component handles the conversion tracking aspect of Optimize.
 
 ```tsx
 import { SovendusLandingPageReact } from "sovendus-integration-react";
@@ -73,45 +148,40 @@ function MyPage() {
 }
 ```
 
-### SovendusThankyouPageReact
+### SovendusThankyouPageReact Implementation
+
+This component should be placed on your order confirmation page after a successful purchase.
 
 > [!NOTE]
-> Each functionality described here is optional and can be enabled/disabled individually.
+> Each functionality is optional and can be enabled/disabled individually.
 
-> [!NOTE]
-> The SovendusThankyouPageReact component is designed to be used on the order confirmation page of your application. It should be rendered after the order has been successfully placed.
+#### Sovendus Checkout Benefits
 
-This component handles the integration of the following Sovendus Products:
+Displays rebated product offers, either inline or in an overlay (configured by Sovendus).
 
-#### Checkout Benefits
+#### Sovendus Voucher Network
 
-- Displays a list of rebated product offers, either inline or in an overlay (this is configured by Sovendus)
-
-#### Voucher Network
+Displays a banner and handles conversion tracking based on the voucher code.
 
 > [!TIP]
-> Voucher Network is not creating any cookies by default. If you want to opt in to cookie tracking, you need to enable it in the settings and let you r Sovendus account manager know, as this has to be enabled on both sides.
+> Voucher Network doesn't create cookies by default. Opt-in requires configuration and approval from your Account Manager.
 
-- Displays a banner either inline or in an overlay (this is configured by Sovendus)
-- Handles the conversion tracking for the Voucher Network based on the passed on Sovendus voucher code.
-- If enabled handles conversion tracking based on an url parameter from the landing page component
+#### Sovendus Checkout Products & Optimize
 
-#### Checkout Products
-
-> [!NOTE]
-> Enabling Sovendus Checkout Products will set and get cookies from Sovendus. Make sure to comply with Sovendus' privacy policy and GDPR regulations.
-
-- Handles the conversion tracking, ff the `sovReqToken` was saved by the Sovendus landing page component.
-
-#### Optimize
-
-> [!NOTE]
-> Enabling Sovendus Optimize will set and get cookies from Sovendus. Make sure to comply with Sovendus' privacy policy and GDPR regulations.
-
-- Handles the conversion tracking for Sovendus Optimize.
+Both handle conversion tracking and require cookie usage. For Optimize specifically, the thank you page component completes the conversion tracking process that begins with the landing page component on other pages.
 
 ```tsx
-import { SovendusThankyouPageReact } from 'sovendus-integration-scripts';
+import { SovendusThankyouPageReact } from 'sovendus-integration-react';
+import type {
+  CountryCodes,
+  LanguageCodes,
+  SovendusAppSettings,
+  SovendusSalutation,
+} from "sovendus-integration-types";
+import {
+  SettingsType,
+  Versions,
+} from "sovendus-integration-types";
 
 function OrderConfirmationPage({ order }) {
   return (
@@ -178,105 +248,25 @@ function OrderConfirmationPage({ order }) {
 }
 ```
 
-## Props
+## Compatibility
 
-### SovendusLandingPageReact Props
+- React 16.8+ (requires Hooks support)
+- Next.js 13+ (with "use client" directive for client components)
+- TypeScript 4.5+ (recommended but not required)
 
-| Prop | Type | Description |
-|------|------|-------------|
-| country | CountryCodes | The country code for the current page |
-| settings | SovendusAppSettings | Settings for Sovendus services (Optimize, etc.) |
-| onDone | (status, config) => void | Callback when the integration is complete |
+## Troubleshooting
 
-### SovendusThankyouPageReact Props
+If you encounter issues with the integration:
 
-| Prop | Type | Description |
-|------|------|-------------|
-| integrationType | string | Identifier for the integration type (e.g., "PLUGIN_REACT") |
-| settings | SovendusAppSettings | Settings for Sovendus services (Voucher Network, Optimize, etc.) |
-| customerData | SovendusConsumerData | Customer information for the order |
-| orderData | SovendusOrderData | Order information including ID, value, currency |
-| iframeContainerQuerySelector | IframeContainerQuerySelectorSettings | (Optional) Custom container selector for the iframe |
-| onDone | (status, config) => void | Callback when the integration is complete |
+1. Check browser console for errors
+2. Verify that ids are correct and match what Sovendus provided
+3. Ensure customer and order data is properly formatted
+4. Confirm that your Sovendus account has been properly configured for the services you're trying to use
+5. For Next.js apps, ensure the component is used with the "use client" directive
+6. For Optimize, ensure the SovendusLandingPageReact component is present on all pages of your site
 
-## Configuration
+For persistent issues, contact your Sovendus Account Manager
 
-The components use settings objects that follow the structure defined in `sovendus-integration-types`:
+## Contributing
 
-### Settings Types
-
-Settings can be configured in two ways:
-
-1. **Simple**: A single configuration for all countries
-2. **Country-based**: Different configurations per country
-
-```typescript
-// Simple settings example
-{
-  settingType: "simple",
-  simple: {
-    isEnabled: true,
-    // Other service-specific properties
-  }
-}
-
-// Country-based settings example
-{
-  settingType: "country",
-  countries: {
-    ids: {
-      "DE": {
-        // German settings
-      },
-      "FR": {
-        // French settings
-      }
-    },
-    fallBackEnabled: true,
-    fallBackId: "default-id"
-  }
-}
-```
-
-## Voucher Network Configuration
-
-To configure the Voucher Network iframe on your thank you page:
-
-```jsx
-<SovendusThankyouPageReact
-  settings={{
-    voucherNetwork: {
-      settingType: "simple",
-      simple: {
-        isEnabled: true,
-        trafficSourceNumber: "12345",
-        trafficMediumNumber: "54321",
-        iframeContainerQuerySelector: {
-          selector: "#custom-container",
-          where: "afterend"
-        }
-      }
-    }
-  }}
-  // Other required props
-/>
-```
-
-## Notes
-
-- The components automatically handle cookies for tracking user sessions
-- Country detection is performed automatically if not provided
-- The thank you page component renders a div container for the Voucher Network iframe
-- Both components include clean-up logic for unmounting
-
-## Advanced Usage
-
-For more complex scenarios or custom integrations, you can extend the vanilla handlers:
-
-```javascript
-import { SovendusThankyouPage } from 'sovendus-integration-scripts/vanilla';
-
-class CustomThankyouPage extends SovendusThankyouPage {
-  // Override methods as needed
-}
-```
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
