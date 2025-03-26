@@ -2671,7 +2671,7 @@ eslint-import-resolver-node@^0.3.9:
     is-core-module "^2.13.0"
     resolve "^1.22.4"
 
-eslint-import-resolver-typescript@^4.2.4:
+eslint-import-resolver-typescript@4.2.4:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-4.2.4.tgz#7b0b96dba608462bb080919b4caa692bdab4e6e3"
   integrity sha512-aXuJ7khvdh/n6UGQ6bk2Hqdk0kJdrkUCxRQy62QXB+aJ9xaCZnynFOMqhwGxOlWnt6k2fHwIPAOaOM5dBCmFZg==
@@ -2723,7 +2723,7 @@ eslint-plugin-import@2.31.0:
     string.prototype.trimend "^1.0.8"
     tsconfig-paths "^3.15.0"
 
-eslint-plugin-node@^11.1.0:
+eslint-plugin-node@11.1.0:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-node/-/eslint-plugin-node-11.1.0.tgz#c95544416ee4ada26740a30474eefc5402dc671d"
   integrity sha512-oUwtPJ1W0SKD0Tr+wqu92c5xuCeQqB3hSCHasn/ZgjFdA9iDGNkNf2Zi9ztY7X+hNuMib23LNGRm6+uN+KLE3g==
@@ -3011,12 +3011,12 @@ fraction.js@^4.3.7:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.3.7.tgz#06ca0085157e42fda7f9e726e79fefc4068840f7"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
-framer-motion@12.6.0:
-  version "12.6.0"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.6.0.tgz#0c41105069d64b790a0d1460b51e4221435cf982"
-  integrity sha512-91XLZ3VwDlXe9u2ABhTzYBiFQ/qdoiqyTiTCQDDJ4es5/5lzp76hdB+WG7gcNklcQlOmfDZQqVO48tqzY9Z/bQ==
+framer-motion@12.6.2:
+  version "12.6.2"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.6.2.tgz#560b1a23d71ed062a2f6d7c2a000a53ef6ee37b4"
+  integrity sha512-7LgPRlPs5aG8UxeZiMCMZz8firC53+2+9TnWV22tuSi38D3IFRxHRUqOREKckAkt6ztX+Dn6weLcatQilJTMcg==
   dependencies:
-    motion-dom "^12.6.0"
+    motion-dom "^12.6.1"
     motion-utils "^12.5.0"
     tslib "^2.4.0"
 
@@ -3277,7 +3277,7 @@ inherits@~2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-inquirer@^12.4.3:
+inquirer@^12.5.0:
   version "12.5.0"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-12.5.0.tgz#de28d9a94888dc454d1253431c8d02665343fcba"
   integrity sha512-aiBBq5aKF1k87MTxXDylLfwpRwToShiHrSv4EmB07EYyLgmnjEz5B3rn0aGw1X3JA/64Ngf2T54oGwc+BCsPIQ==
@@ -3827,10 +3827,10 @@ mlly@^1.7.4:
     pkg-types "^1.3.0"
     ufo "^1.5.4"
 
-motion-dom@^12.6.0:
-  version "12.6.0"
-  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.6.0.tgz#f9fb2499cd7908f7700f5f87295693e47e5a1b74"
-  integrity sha512-1s/+/V0ny/gfhocSSf0qhkspZK2da7jrwGw7xHzgiQPcimdHaPRcRCoJ3OxEZYBNzy3ma1ERUD+eUStk6a9pQw==
+motion-dom@^12.6.1:
+  version "12.6.1"
+  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.6.1.tgz#2b8f53c0af51db75301f88f25fc4d4546424ba60"
+  integrity sha512-8XVsriTUEVOepoIDgE/LDGdg7qaKXWdt+wQA/8z0p8YzJDLYL8gbimZ3YkCLlj7bB2i/4UBD/g+VO7y9ZY0zHQ==
   dependencies:
     motion-utils "^12.5.0"
 
@@ -3902,10 +3902,10 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
-npm-check-updates@17.1.15:
-  version "17.1.15"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-17.1.15.tgz#3e5734f5acf91de1c4ef3cd4ac460172d9195c99"
-  integrity sha512-miATvKu5rjec/1wxc5TGDjpsucgtCHwRVZorZpDkS6NzdWXfnUWlN4abZddWb7XSijAuBNzzYglIdTm9SbgMVg==
+npm-check-updates@17.1.16:
+  version "17.1.16"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-17.1.16.tgz#28f5debfb81b29bf152162de810beb526b638226"
+  integrity sha512-9nohkfjLRzLfsLVGbO34eXBejvrOOTuw5tvNammH73KEFG5XlFoi3G2TgjTExHtnrKWCbZ+mTT+dbNeSjASIPw==
 
 object-inspect@^1.13.3:
   version "1.13.4"
@@ -4573,17 +4573,17 @@ sovendus-builder@^1.3.6:
     tailwindcss "4.0.15"
     vite-plugin-css-injected-by-js "3.5.2"
 
-sovendus-integration-scripts@^3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/sovendus-integration-scripts/-/sovendus-integration-scripts-3.9.1.tgz#2510c28d362741893c91bac906d56cf2cd2ccc5a"
-  integrity sha512-wmWZhuiejv8k7RssvNTjm9m+yUNm3+rGmOdSAXlrlN2mjEG5APj6WFI0t7jrGgkMs4+3xHEJNWDfiLTLWEI1Qw==
+sovendus-integration-scripts@3.9.3:
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/sovendus-integration-scripts/-/sovendus-integration-scripts-3.9.3.tgz#ff9b3312999c6acea624611072821f4becd594db"
+  integrity sha512-rUq7jCRMixFBRLEB0OitGDL1cH53ewlQz5XLnQVvbSQX1o9rEc4fFMN9u1AcgzWZigAYIU+3t24CGUmq1G2PCw==
   dependencies:
-    sovendus-integration-types "3.8.3"
+    sovendus-integration-types "3.8.4"
 
-sovendus-integration-settings-ui@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/sovendus-integration-settings-ui/-/sovendus-integration-settings-ui-4.2.6.tgz#4e83e1eac35b64f9265fde294a09f33f5454f77c"
-  integrity sha512-/k2exB8SN+NUd8matkVt/w/fJDP8WtHutkwhzmDkgtJeZQh1rSudL6rlvpa97/3B0JASwdVCySk+3gUlwHTMGw==
+sovendus-integration-settings-ui@4.2.7:
+  version "4.2.7"
+  resolved "https://registry.yarnpkg.com/sovendus-integration-settings-ui/-/sovendus-integration-settings-ui-4.2.7.tgz#98e9dbd2114c68b1c66aab5874e0817428cff371"
+  integrity sha512-d8dGBYB92+azeDZHKaniyqxWK968SzzbhXJa4OWD2BCq4uCQqQBK45VTc5OIf4FBh0MWf+Pvgo5/qXKWYY4dNQ==
   dependencies:
     "@hookform/resolvers" "^4.1.3"
     "@radix-ui/react-accordion" "1.2.3"
@@ -4601,34 +4601,34 @@ sovendus-integration-settings-ui@^4.2.6:
     class-variance-authority "0.7.1"
     clsx "2.1.1"
     cmdk "^1.1.1"
-    framer-motion "12.6.0"
+    framer-motion "12.6.2"
     lucide-react "0.484.0"
     postcss "8.5.3"
     react "19.0.0"
     react-dom "19.0.0"
     react-hook-form "^7.54.2"
-    sovendus-integration-types "3.8.3"
+    sovendus-integration-types "3.8.4"
     tailwind-merge "3.0.2"
     tailwindcss "4.0.17"
     tailwindcss-animate "1.0.7"
     vite "^6.2.3"
 
-sovendus-integration-types@3.8.3, sovendus-integration-types@^3.8.3:
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/sovendus-integration-types/-/sovendus-integration-types-3.8.3.tgz#7244e53a31aadb5c68c0915371a3cfd01d72d8c0"
-  integrity sha512-wuRzTxnjAdJm9PTUQ8sYEk1u2iA95UhUjp81LjNzhgR527TRnI5xtZ5XfhCODZUIleFzc2uqHzgcLMkGPCIvXQ==
+sovendus-integration-types@3.8.4:
+  version "3.8.4"
+  resolved "https://registry.yarnpkg.com/sovendus-integration-types/-/sovendus-integration-types-3.8.4.tgz#bb44e0b9f6e1adaef54b9274902807875a5732d0"
+  integrity sha512-tBE7I2jpB6Yax9x/f/+tM5KTeq16K5UsysBnzon4tCUyVEmi8hoYBOljyZhjg+ymLaHUOyUT6b0pt/1/0S8DFQ==
   optionalDependencies:
     zod "^3.24.2"
 
-sovendus-release-tool@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/sovendus-release-tool/-/sovendus-release-tool-1.4.1.tgz#47b5c85c994df9f267f54ca87a6d693ea0c9bba2"
-  integrity sha512-xlyHtr8m/xDeEX1f3EGY8kJo+GemAzJlBjYRYNqbMK9o60OCmZQE6qmA5tRR/6fX4wNGGcjIvtDSUK+MPBwdtA==
+sovendus-release-tool@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/sovendus-release-tool/-/sovendus-release-tool-1.4.2.tgz#93886827c7cda55fb4c5877ccee7ac6ccdc55e2d"
+  integrity sha512-gOs6IL3KizfujklALO0Th2ovod6RW0gqVn4GZLL/GWccLFbYrUxwAld7xdatnHPrjRq/f9v0x2CApj2PpH4WuQ==
   dependencies:
     commander "13.1.0"
-    inquirer "^12.4.3"
-    npm-check-updates "17.1.15"
-    vite "^6.2.2"
+    inquirer "^12.5.0"
+    npm-check-updates "17.1.16"
+    vite "^6.2.3"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -4938,7 +4938,7 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@5.8.2, typescript@^5.8.2:
+typescript@5.8.2:
   version "5.8.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
   integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
@@ -5043,17 +5043,6 @@ vite-plugin-dts@4.5.3:
     kolorist "^1.8.0"
     local-pkg "^1.0.0"
     magic-string "^0.30.17"
-
-vite@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.2.tgz#8098b12a6bfd95abe39399aa7d5faa56545d7a1a"
-  integrity sha512-yW7PeMM+LkDzc7CgJuRLMW2Jz0FxMOsVJ8Lv3gpgW9WLcb9cTW+121UEr1hvmfR7w3SegR5ItvYyzVz1vxNJgQ==
-  dependencies:
-    esbuild "^0.25.0"
-    postcss "^8.5.3"
-    rollup "^4.30.1"
-  optionalDependencies:
-    fsevents "~2.3.3"
 
 vite@^6.2.3:
   version "6.2.3"

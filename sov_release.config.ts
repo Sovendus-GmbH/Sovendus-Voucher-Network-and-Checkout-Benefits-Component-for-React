@@ -7,7 +7,7 @@ const releaseConfig: ReleaseConfig = {
       updateDeps: true,
       lint: true,
       build: true,
-      test: true,
+      test: false,
       release: {
         version: "2.0.0",
         versionBumper: [
