@@ -1,7 +1,8 @@
 {
   "name": "sovendus-integration-react",
   "version": "2.0.0",
-  "description": "Official React Component for Sovendus Voucher Network and Checkout Benefits",
+  "private": false,
+  "description": "Official Sovendus Integration React Component",
   "types": "./dist/package/index.d.ts",
   "main": "./dist/package/index.mjs",
   "module": "./dist/package/index.mjs",
