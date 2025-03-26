@@ -1,0 +1,10 @@
+.github
+node_modules/
+src
+eslint.config.mjs
+next-env.d.ts
+readme-dev.md
+tsconfig.json
+yarn.lock
+sov_release.config.ts
+sov_build.config.ts

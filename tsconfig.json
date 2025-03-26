@@ -1,14 +1,74 @@
 {
-  "include": ["src"], /* Include only the src directory */
   "compilerOptions": {
-    "jsx": "react",
-    "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-    "module": "commonjs" /* Specify what module code is generated. */,
-    "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "rootDir": ".",
+    "jsx": "preserve",
+    "moduleResolution": "bundler",
+    "declarationDir": "dist",
     "outDir": "dist",
-    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
-    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
-    "strict": true /* Enable all strict type-checking options. */,
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "types": [
+      "node"
+    ],
+    "noEmitOnError": true,
+    "removeComments": true,
+    "allowJs": false,
+    "checkJs": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "useUnknownInCatchVariables": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitUseStrict": false,
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "noStrictGenericChecks": false,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".next/types/**/*.ts",
+    "sov_build.config.ts",
+    "sov_release.config.ts",
+    "next-env.d.ts",
+    "src/package/index.tsx"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./dist",
+    ".next"
+  ]
 }
