@@ -83,6 +83,8 @@ Handles the core Sovendus Optimize functionality which analyzes visitor behavior
 > [!WARNING]
 > For Sovendus Optimize to function properly, the SovendusLandingPageReact component must be present on ALL pages of your website. The thank you page component handles the conversion tracking aspect of Optimize.
 
+#### SovendusLandingPageReact Example
+
 ```tsx
 import { SovendusLandingPageReact } from "sovendus-integration-react";
 import {
@@ -148,6 +150,8 @@ Displays a banner and handles conversion tracking based on the voucher code.
 #### Sovendus Checkout Products & Optimize
 
 Both handle conversion tracking and require cookie usage. For Optimize specifically, the thank you page component completes the conversion tracking process that begins with the landing page component on other pages.
+
+#### SovendusThankyouPageReact Example
 
 ```tsx
 import { SovendusThankyouPageReact } from 'sovendus-integration-react';
