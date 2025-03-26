@@ -1,33 +1,12 @@
 # Sovendus React Components
 
-This document provides guidance on using the Sovendus React components for integrating Sovendus marketing solutions into your React application.
+## Introduction
 
-## Table of Contents
-
-- [Disclaimer](#disclaimer)
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Components Overview](#components-overview)
-  - [SovendusLandingPageReact](#sovenduslandingpagereact)
-  - [SovendusThankyouPageReact](#sovendusthankyoupagereact)
-- [Usage](#usage)
-  - [SovendusLandingPageReact Implementation](#sovenduslandingpagereact-implementation)
-  - [SovendusThankyouPageReact Implementation](#sovendusthankyoupagereact-implementation)
-- [Compatibility](#compatibility)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
+This document provides guidance on using the Sovendus React components for several Sovendus services including Voucher Network, Checkout Benefits, Checkout Products, and Optimize. The components are designed to be easily integrated into React and Next.js applications.
 
 ## Disclaimer
 
 This component is released as open source under the GPL v3 license. We welcome bug reports and pull requests from the community. However, please note that the component is provided "as is" without any warranties or guarantees. It may not be compatible with all other libraries and could potentially cause issues with your store. We strongly recommend that you test the components thoroughly in a staging environment before deploying it to a live site. Furthermore, we do not promise future support or updates and reserve the right to discontinue support for the component at any time.
-
-## Introduction
-
-Sovendus offers various marketing solutions including voucher networks, checkout benefits, optimize and checkout products. These React components provide an easy way to integrate these services into your React application, whether it's a standard React app or a Next.js project.
-
-## Disclaimer
-
-This component is released as open source under the GPL v3 license. We welcome bug reports and pull requests from the community. However, please note that the component is provided "as is" without any warranties or guarantees. It may not be compatible with all other plugins and could potentially cause issues with your store. We strongly recommend that you test the plugin thoroughly in a staging environment before deploying it to a live site. Furthermore, we do not promise future support or updates and reserve the right to discontinue support for the component at any time.
 
 ## Installation
 
