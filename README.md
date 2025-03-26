@@ -28,7 +28,7 @@ This component is designed for handling Sovendus services on regular pages. It m
 - Conversion tracking for Checkout Products
 - Integration with Sovendus Optimize
 
-> [!IMPORTANT]
+> [!WARNING]
 > The SovendusLandingPageReact component must be included on **all pages** of your website to ensure proper functioning of Sovendus Optimize.
 
 ### SovendusThankyouPageReact
@@ -47,7 +47,7 @@ Both components work with client-side React and Next.js applications (with the "
 
 This component should be placed on your regular site pages to enable various tracking and integration features.
 
-> [!NOTE]
+> [!INFO]
 > Each functionality described below is optional and can be enabled/disabled individually.
 
 #### Sovendus Checkout Benefits
@@ -61,14 +61,14 @@ This is only required if you opt into cookie-based tracking. You'll need to:
 - Enable it in the component settings
 - Notify your Sovendus Account Manager
 
-> [!IMPORTANT]
+> [!WARNING]
 > This tag is required for Voucher Network Switzerland and optional for other regions.
 
 #### Sovendus Checkout Products
 
 Enables conversion tracking if the `sovReqToken` was saved by the landing page component.
 
-> [!NOTE]
+> [!INFO]
 > Enabling Checkout Products will set and get cookies from Sovendus. Ensure compliance with privacy regulations.
 
 #### Sovendus Optimize
@@ -80,7 +80,7 @@ Handles the core Sovendus Optimize functionality which analyzes visitor behavior
 - Providing personalized experiences to reduce bounce rates and cart abandonment
 - Implementing various trigger rules based on user actions
 
-> [!IMPORTANT]
+> [!WARNING]
 > For Sovendus Optimize to function properly, the SovendusLandingPageReact component must be present on ALL pages of your website. The thank you page component handles the conversion tracking aspect of Optimize.
 
 ```tsx
@@ -131,7 +131,7 @@ function MyPage() {
 
 This component should be placed on your order confirmation page after a successful purchase.
 
-> [!NOTE]
+> [!INFO]
 > Each functionality is optional and can be enabled/disabled individually.
 
 #### Sovendus Checkout Benefits
@@ -142,7 +142,7 @@ Displays rebated product offers, either inline or in an overlay (configured by S
 
 Displays a banner and handles conversion tracking based on the voucher code.
 
-> [!TIP]
+> [!INFO]
 > Voucher Network doesn't create cookies by default. Opt-in requires configuration and approval from your Account Manager.
 
 #### Sovendus Checkout Products & Optimize
