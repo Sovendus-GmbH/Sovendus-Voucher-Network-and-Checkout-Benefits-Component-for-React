@@ -2,7 +2,6 @@
 
 import type { Dispatch, JSX, SetStateAction } from "react";
 import { useEffect, useState } from "react";
-import { SovendusThankyouPageReact } from "sovendus-integration-react";
 import { loggerInfo } from "sovendus-integration-scripts";
 import { SovendusThankyouPageDemoForm } from "sovendus-integration-scripts/demo";
 import {
@@ -15,6 +14,8 @@ import type {
   SovendusConversionsData,
 } from "sovendus-integration-types";
 import { CountryCodes } from "sovendus-integration-types";
+
+import { SovendusThankyouPageReact } from "../../package";
 
 const defaultConfig: {
   orderData: SovendusConversionsData;
