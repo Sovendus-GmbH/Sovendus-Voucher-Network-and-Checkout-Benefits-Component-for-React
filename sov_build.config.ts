@@ -4,9 +4,9 @@ const buildConfig: BuildConfig = {
   foldersToClean: ["dist"],
   filesToCompile: [
     {
-      input: "src/package/index.tsx",
-      output: "dist/package/index",
-      options: {
+      sovOptions: {
+        input: "src/package/index.tsx",
+        output: "dist/package/index",
         type: "react",
         modulesToExternalize: ["react/jsx-runtime"],
         packageConfig: {
