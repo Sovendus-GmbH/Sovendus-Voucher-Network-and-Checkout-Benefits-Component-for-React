@@ -6,7 +6,7 @@ import { SovendusLandingPageDemoForm } from "sovendus-integration-scripts/demo";
 import { getSettings } from "sovendus-integration-settings-ui/demo-style-less";
 import { type SovendusAppSettings } from "sovendus-integration-types";
 
-import { SovendusLandingPageReact } from "../../package";
+import { SovendusLandingPageReact } from "../../../../src/package";
 
 export default function SovendusLandingPageDemo(): JSX.Element {
   const [settings, setSettings] = useState<SovendusAppSettings>();

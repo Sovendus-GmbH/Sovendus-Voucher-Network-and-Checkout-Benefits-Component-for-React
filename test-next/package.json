@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "sovendus-integration-react": "2.0.2",
+    "sovendus-integration-react": "2.0.3",
+    "sovendus-integration-settings-ui": "4.2.9",
     "next": "^14",
     "react": "^18",
     "react-dom": "^18"
@@ -17,7 +18,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^9",

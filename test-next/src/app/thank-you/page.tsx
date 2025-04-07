@@ -15,7 +15,7 @@ import type {
 } from "sovendus-integration-types";
 import { CountryCodes } from "sovendus-integration-types";
 
-import { SovendusThankyouPageReact } from "../../package/sovendus-thankyou-page";
+import { SovendusThankyouPageReact } from "sovendus-integration-react";
 
 const defaultConfig: {
   orderData: SovendusConversionsData;

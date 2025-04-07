@@ -233,7 +233,7 @@ function OrderConfirmationPage({ order }) {
 
 ## Compatibility
 
-- React 16.8+ (requires Hooks support)
+- React 17+ (requires Hooks support)
 - Next.js 13+ (with "use client" directive for client components)
 - TypeScript 4.5+ (recommended but not required)
 

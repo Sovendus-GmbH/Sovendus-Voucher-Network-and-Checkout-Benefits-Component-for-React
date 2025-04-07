@@ -64,7 +64,9 @@
     "sov_build.config.ts",
     "sov_release.config.ts",
     "next-env.d.ts",
-    "src/package/index.tsx"
+    "src/package/index.tsx",
+    "test-next/src/app/layout.tsx",
+    "test-next/src/app/page.tsx"
   ],
   "exclude": [
     "./node_modules",
