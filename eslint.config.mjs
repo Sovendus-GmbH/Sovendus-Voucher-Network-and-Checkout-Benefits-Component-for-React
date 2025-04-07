@@ -31,7 +31,8 @@ export default [
     ignores: [
       "dist",
       "eslint.config.mjs",
-      ".next"
+      ".next",
+      "test-next"
     ],
   },
 

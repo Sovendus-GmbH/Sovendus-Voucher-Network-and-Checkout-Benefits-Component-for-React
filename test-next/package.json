@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "sovendus-integration-react": "^2.0.1",
+    "sovendus-integration-react": "2.0.2",
     "next": "^14",
     "react": "^18",
     "react-dom": "^18"
