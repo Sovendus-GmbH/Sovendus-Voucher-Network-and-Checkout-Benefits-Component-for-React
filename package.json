@@ -17,8 +17,8 @@
     }
   },
   "scripts": {
-    "dev": "cd test-next && next dev",
-    "preview": "cd test-next && next build && next start",
+    "dev": "next dev",
+    "preview": "next build && next start",
     "build": "sovendus-builder build",
     "lint": "eslint --fix",
     "pub": "sovendus-release-tool"
@@ -48,14 +48,14 @@
   },
   "homepage": "https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Web-Integration/React-Component",
   "dependencies": {
-    "sovendus-integration-scripts": "3.9.5",
+    "sovendus-integration-scripts": "3.9.8",
     "sovendus-integration-types": "3.8.8"
   },
   "devDependencies": {
     "@types/eslint": "9.6.1",
     "@types/node": "22.14.0",
-    "@types/react": "^17",
-    "@types/react-dom": "^17",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "8.29.0",
     "@typescript-eslint/parser": "8.29.0",
     "eslint": "9.24.0",
@@ -70,10 +70,11 @@
     "eslint-plugin-unused-imports": "4.1.4",
     "prettier": "3.5.3",
     "prettier-plugin-sort-json": "4.1.1",
-    "react": "^17",
-    "react-dom": "^17",
-    "sovendus-builder": "^1.4.2",
-    "sovendus-integration-settings-ui": "4.2.9",
+    "next": "^14",
+    "react": "^18",
+    "react-dom": "^18",
+    "sovendus-builder": "^1.4.4",
+    "sovendus-integration-settings-ui": "4.2.13",
     "sovendus-release-tool": "1.4.4",
     "typescript": "5.8.3"
   },
@@ -81,10 +82,11 @@
     "@types/react",
     "@types/react-dom",
     "react",
-    "react-dom"
+    "react-dom",
+    "next"
   ],
   "peerDependencies": {
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   }
 }
