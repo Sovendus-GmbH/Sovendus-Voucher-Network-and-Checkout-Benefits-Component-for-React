@@ -21,7 +21,7 @@
 
 "use client";
 
-import type { JSX } from "react";
+import type { ReactElement } from "react";
 import { useEffect, useMemo } from "react";
 import { SovendusThankyouPage } from "sovendus-integration-scripts";
 import type {
@@ -48,7 +48,7 @@ export interface SovendusThankyouPageReactProps
 export function SovendusThankyouPageReact({
   onDone,
   ...sovThankyouConfig
-}: SovendusThankyouPageReactProps): JSX.Element {
+}: SovendusThankyouPageReactProps): ReactElement {
   const containerId = "sovendus-thankyou-container";
   const containerSelector = `#${containerId}`;
   const iframeContainerQuerySelector: IframeContainerQuerySelectorSettings = {

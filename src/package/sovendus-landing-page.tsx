@@ -21,7 +21,8 @@
 
 "use client";
 
-import type { JSX } from "react";
+// import type { Element } from "react";
+import type { ReactElement } from "react";
 import { useEffect, useMemo } from "react";
 import { SovendusPage } from "sovendus-integration-scripts";
 import type {
@@ -43,7 +44,7 @@ export interface SovendusLandingPageReactProps
 
 export function SovendusLandingPageReact(
   props: SovendusLandingPageReactProps,
-): JSX.Element {
+): ReactElement {
   return useMemo(() => {
     return <Handler {...props} />;
     // eslint-disable-next-line react-compiler/react-compiler
@@ -54,7 +55,7 @@ export function SovendusLandingPageReact(
 function Handler({
   onDone,
   ...sovPageConfig
-}: SovendusLandingPageReactProps): JSX.Element {
+}: SovendusLandingPageReactProps): ReactElement {
   useEffect(() => {
     if (typeof window === "undefined") {
       return;

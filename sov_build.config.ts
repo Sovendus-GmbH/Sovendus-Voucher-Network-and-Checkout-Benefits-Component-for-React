@@ -8,6 +8,7 @@ const buildConfig: BuildConfig = {
       output: "dist/package/index",
       options: {
         type: "react",
+        modulesToExternalize: ["react/jsx-runtime"],
         packageConfig: {
           isPackage: true,
           dtsEntryRoot: "src/package",
