@@ -4,9 +4,9 @@
 
 This document provides guidance on using the Sovendus React components for several Sovendus services including Voucher Network, Checkout Benefits, Checkout Products, and Optimize. The components are designed to be easily integrated into React and Next.js applications.
 
-## Disclaimer
-
-This component is released as open source under the GPL v3 license. We welcome bug reports and pull requests from the community. However, please note that the component is provided "as is" without any warranties or guarantees. It may not be compatible with all other libraries and could potentially cause issues with your store. We strongly recommend that you test the components thoroughly in a staging environment before deploying it to a live site. Furthermore, we do not promise future support or updates and reserve the right to discontinue support for the component at any time.
+> [!INFO]
+> **Disclaimer**
+> This component is released as open source under the GPL v3 license. We welcome bug reports and pull requests from the community. However, please note that the component is provided "as is" without any warranties or guarantees. It may not be compatible with all other libraries and could potentially cause issues with your store. We strongly recommend that you test the components thoroughly in a staging environment before deploying it to a live site. Furthermore, we do not promise future support or updates and reserve the right to discontinue support for the component at any time.
 
 ## Installation
 
