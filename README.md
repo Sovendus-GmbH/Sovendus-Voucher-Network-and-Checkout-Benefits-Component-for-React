@@ -1,6 +1,6 @@
 # Sovendus React Components
 
-## Introduction
+## 🚀 Introduction
 
 This document provides guidance on using the Sovendus React components for several Sovendus services including Voucher Network, Checkout Benefits, Checkout Products, and Optimize. The components are designed to be easily integrated into React and Next.js applications.
 
@@ -8,7 +8,7 @@ This document provides guidance on using the Sovendus React components for sever
 > **Disclaimer**
 > This component is released as open source under the GPL v3 license. We welcome bug reports and pull requests from the community. However, please note that the component is provided "as is" without any warranties or guarantees. It may not be compatible with all other libraries and could potentially cause issues with your store. We strongly recommend that you test the components thoroughly in a staging environment before deploying it to a live site. Furthermore, we do not promise future support or updates and reserve the right to discontinue support for the component at any time.
 
-## Installation
+## 📦 Installation
 
 ```bash
 npm install sovendus-integration-react sovendus-integration-types
@@ -16,7 +16,7 @@ npm install sovendus-integration-react sovendus-integration-types
 yarn add sovendus-integration-react sovendus-integration-types
 ```
 
-## Components Overview
+## 🧩 Components Overview
 
 The package includes two main React components:
 
@@ -41,7 +41,7 @@ This component is specifically for order confirmation pages and integrates:
 
 Both components work with client-side React and Next.js applications (with the "use client" directive).
 
-## Usage
+## 🛠️ Usage
 
 ### SovendusLandingPageReact Implementation
 
@@ -231,13 +231,13 @@ function OrderConfirmationPage({ order }) {
 }
 ```
 
-## Compatibility
+## 🖥️ Compatibility
 
 - React 17+ (requires Hooks support)
 - Next.js 13+ (with "use client" directive for client components)
 - TypeScript 4.5+ (recommended but not required)
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 
 If you encounter issues with the integration:
 
@@ -250,6 +250,6 @@ If you encounter issues with the integration:
 
 For persistent issues, contact your Sovendus Account Manager
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
